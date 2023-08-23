@@ -1,0 +1,96 @@
+body, h1, h2, p{
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+
+body {
+    background: url('./images/images1.jpeg') no-repeat center/cover;
+    height: 100vh;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+header {
+    background-color:rgb(248, 244, 244);
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.characters-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    border: 1px solid #47b657;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.character-item {
+    background-color: rgb(244, 239, 247);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.character-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.character-item:hover {
+    transform: scale(1.05);
+}
+
+.character-details {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(13, 6, 6);
+    border: 1px solid #9baee3;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.details-section {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #534106;
+  }
+
+.characters-list:hover {
+    background-color: #c8c4c4;
+}
+
+@media (max-width: 768px) {
+    .characters-list {
+        justify-content: center;
+        align-items: center;
+    }
+    .character-item {
+        max-width: 80%; /* Adjust the width as needed */
+        height: auto;
+    }
+}
